@@ -1,102 +1,110 @@
 [
-    {
-       "id":1,
-       "category":1,
-       "postDate":"2023-05-14",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":9.99,
-       "title":"Lawnmower",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    },
-    {
-       "id":2,
-       "category":1,
-       "postDate":"2023-05-15",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":19.99,
-       "title":"Weber BBQ",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    },
-    {
-       "id":3,
-       "category":2,
-       "postDate":"2023-05-16",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":439.99,
-       "title":"PS5",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    },
-    {
-       "id":4,
-       "category":2,
-       "postDate":"2023-05-17",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":459.99,
-       "title":"XBOX",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    },
-    {
-       "id":5,
-       "category":3,
-       "postDate":"2023-05-18",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":39.99,
-       "title":"TShirt",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    },
-    {
-       "id":6,
-       "category":3,
-       "postDate":"2023-05-19",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":29.99,
-       "title":"Shorts",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    },
-    {
-       "id":7,
-       "category":4,
-       "postDate":"2023-05-20",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":19.99,
-       "title":"Baseball",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    },
-    {
-       "id":8,
-       "category":4,
-       "postDate":"2023-05-21",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":99.99,
-       "title":"Soccer Ball",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    },
-    {
-       "id":9,
-       "category":5,
-       "postDate":"2023-05-16",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":99.99,
-       "title":"Dog Food",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    },
-    {
-       "id":10,
-       "category":5,
-       "postDate":"2023-05-16",
-       "featureImage":"https://dummyimage.com/200x200/000/fff",
-       "price":9.99,
-       "title":"Fish Food",
-       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
-       "published":true
-    }
- ] 
+   {
+      "id": 1,
+      "category": 1,
+      "postDate": "2025-02-06",
+      "price": 1299.99,
+      "title": "High-Performance Laptop",
+      "body": "Powerful laptop with the latest processor, ample RAM, and a stunning display. Perfect for professionals and gamers.",
+      "published": true
+   },
+   {
+      "id": 2,
+      "category": 1,
+      "postDate": "2025-02-06",
+      "price": 899.99,
+      "title": "Ultra-Slim Notebook",
+      "body": "Lightweight and portable notebook with long battery life, ideal for students and travelers.",
+      "published": true
+   },
+   {
+      "id": 3,
+      "category": 2,
+      "postDate": "2025-02-06",
+      "price": 999.99,
+      "title": "Latest Smartphone",
+      "body": "Feature-packed smartphone with a high-resolution camera, fast processor, and 5G connectivity.",
+      "published": true
+   },
+   {
+      "id": 4,
+      "category": 2,
+      "postDate": "2025-02-06",
+      "price": 49.99,
+      "title": "Wireless Charging Pad",
+      "body": "Fast and efficient wireless charging pad compatible with most smartphones.",
+      "published": true
+   },
+   {
+      "id": 5,
+      "category": 3,
+      "postDate": "2025-02-06",
+      "price": 499.99,
+      "title": "Gaming Console",
+      "body": "Next-gen gaming console with ultra-realistic graphics and an extensive game library.",
+      "published": true
+   },
+   {
+      "id": 6,
+      "category": 3,
+      "postDate": "2025-02-06",
+      "price": 69.99,
+      "title": "Wireless Gaming Controller",
+      "body": "Ergonomic gaming controller with precise controls and long battery life.",
+      "published": true
+   },
+   {
+      "id": 7,
+      "category": 4,
+      "postDate": "2025-02-06",
+      "price": 199.99,
+      "title": "Smartwatch",
+      "body": "Advanced smartwatch with fitness tracking, notifications, and a sleek design.",
+      "published": true
+   },
+   {
+      "id": 8,
+      "category": 4,
+      "postDate": "2025-02-06",
+      "price": 149.99,
+      "title": "Fitness Tracker",
+      "body": "Track your daily activity, heart rate, and sleep with this stylish fitness tracker.",
+      "published": true
+   },
+   {
+      "id": 9,
+      "category": 5,
+      "postDate": "2025-02-06",
+      "price": 299.99,
+      "title": "Smart Home Hub",
+      "body": "Control all your smart home devices with voice commands and automation.",
+      "published": true
+   },
+   {
+      "id": 10,
+      "category": 5,
+      "postDate": "2025-02-06",
+      "price": 129.99,
+      "title": "Smart LED Bulbs (Pack of 4)",
+      "body": "Energy-efficient smart bulbs with customizable colors and voice control compatibility.",
+      "published": true
+   },
+   {
+      "id": 11,
+      "category": 6,
+      "postDate": "2025-02-06",
+      "price": 249.99,
+      "title": "Noise-Canceling Headphones",
+      "body": "Immerse yourself in high-quality sound with these wireless noise-canceling headphones.",
+      "published": true
+   },
+   {
+      "id": 12,
+      "category": 6,
+      "postDate": "2025-02-06",
+      "price": 99.99,
+      "title": "Wireless Earbuds",
+      "body": "Compact and powerful earbuds with deep bass and a comfortable fit.",
+      "published": true
+   }
+]
