@@ -8,8 +8,8 @@ No part of this assignment has been copied manually or electronically from any o
 Name: Your Name
 Student ID: Aaron Joseph
 Date: 2025-02-06
-Cyclic Web App URL: 
-GitHub Repository URL: 
+github Web App URL: https://ajoseph88.github.io/web322-app/
+GitHub Repository URL: https://github.com/ajoseph88/web322-app.git
 *********************************************************************************/
 
 const express = require("express");
