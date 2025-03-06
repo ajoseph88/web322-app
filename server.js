@@ -1,38 +1,38 @@
 /*********************************************************************************
-WEB322 – Assignment 02
-
-I declare that this assignment is my own work in accordance with Seneca Academic Policy. 
-No part of this assignment has been copied manually or electronically from any other source 
-(including 3rd party web sites) or distributed to other students.
-
-Name: Your Name
-Student ID: Aaron Joseph
-Date: 2025-02-06
-Cyclic Web App URL: 
-GitHub Repository URL: 
+*  WEB322 – Assignment 03
+*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  
+*  No part of this assignment has been copied manually or electronically from any other source 
+*  (including 3rd party web sites) or distributed to other students.
+* 
+*  Name: Aaron Joseph
+*  Student ID: 151757226
+*  Date: March 05, 2025
+*  Cyclic Web App URL: 
+*  GitHub Repository URL: https://github.com/ajoseph88/web322-app.git
+*
 *********************************************************************************/
 
 const express = require("express");
 const path = require("path");
 const storeService = require("./store-service");
-const multer = require("multer"); 
-const cloudinary = require("cloudinary").v2; 
-const streamifier = require("streamifier"); 
+const multer = require("multer");
+const cloudinary = require("cloudinary").v2;
+const streamifier = require("streamifier");
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.use(express.static("public"));
 
+app.use(express.static("public"));
 
 cloudinary.config({
     cloud_name: "TITLE", 
-    api_key: "Y777141267615443",       
-    api_secret: "YuqEw9ANgcUnOXX8dgO78pKAZRQE", 
+    api_key: "777141267615443",
+    api_secret: "YuqEw9ANgcUnOXX8dgO78pKAZRQE",
     secure: true
 });
 
-// Set up multer
+
 const upload = multer();
 
 
@@ -42,11 +42,12 @@ app.get("/", (req, res) => {
 
 
 app.get("/about", (req, res) => {
-    res.sendFile(path.join(__dirname, "views/about.html"));
+    res.sendFile(path.join(__dirname, "views", "about.html"));
 });
 
+
 app.get("/items/add", (req, res) => {
-    res.sendFile(path.join(__dirname, "views/addItem.html"));
+    res.sendFile(path.join(__dirname, "views", "addItem.html"));
 });
 
 
@@ -67,7 +68,7 @@ app.post("/items/add", upload.single("featureImage"), (req, res) => {
 
         async function upload(req) {
             let result = await streamUpload(req);
-            console.log(result); 
+            console.log(result);
             return result;
         }
 
@@ -78,19 +79,18 @@ app.post("/items/add", upload.single("featureImage"), (req, res) => {
             processItem(""); 
         });
     } else {
-        processItem(""); 
+        processItem("");
     }
 
     function processItem(imageUrl) {
-        
         req.body.featureImage = imageUrl;
 
         const itemData = {
             title: req.body.title,
             price: req.body.price,
-            body: req.body.body, 
+            body: req.body.body,
             category: req.body.category,
-            published: req.body.published ? true : false, 
+            published: req.body.published ? true : false,
             featureImage: req.body.featureImage
         };
 
@@ -107,7 +107,6 @@ app.get("/shop", (req, res) => {
         .then(items => res.json(items))
         .catch(err => res.status(404).json({ message: err }));
 });
-
 
 app.get("/items", (req, res) => {
     if (req.query.category) {
@@ -128,7 +127,7 @@ app.get("/items", (req, res) => {
     }
 });
 
-
+// Get item by ID
 app.get("/item/:id", (req, res) => {
     storeService
         .getItemById(req.params.id)
@@ -136,14 +135,14 @@ app.get("/item/:id", (req, res) => {
         .catch(err => res.status(404).json({ message: err }));
 });
 
-
+// Get all categories
 app.get("/categories", (req, res) => {
     storeService.getCategories()
         .then(categories => res.json(categories))
         .catch(err => res.status(404).json({ message: err }));
 });
 
-
+// Handle 404 - Page Not Found
 app.use((req, res) => {
     res.status(404).send("Page Not Found");
 });
@@ -156,5 +155,5 @@ storeService.initialize()
         });
     })
     .catch(err => {
-        console.log("Failed to initialize store service:", err);
+        console.error("Failed to initialize store service:", err);
     });
