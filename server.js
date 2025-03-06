@@ -7,7 +7,7 @@
 *  Name: Aaron Joseph
 *  Student ID: 151757226
 *  Date: March 05, 2025
-*  Cyclic Web App URL: 
+*  Cyclic Web App URL: https://ajoseph88.github.io/web322-app/
 *  GitHub Repository URL: https://github.com/ajoseph88/web322-app.git
 *
 *********************************************************************************/
