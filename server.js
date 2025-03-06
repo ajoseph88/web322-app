@@ -1,15 +1,15 @@
 /*********************************************************************************
-*  WEB322 – Assignment 03
-*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  
-*  No part of this assignment has been copied manually or electronically from any other source 
-*  (including 3rd party web sites) or distributed to other students.
-* 
-*  Name: Aaron Joseph
-*  Student ID: [Your Student ID]  // Replace with your actual ID
-*  Date: March 05, 2025
-*  Cyclic Web App URL: [Your Cyclic URL]  // Replace with your Cyclic URL after deployment
-*  GitHub Repository URL: https://github.com/ajoseph88/web322-app.git
-*
+WEB322 – Assignment 02
+
+I declare that this assignment is my own work in accordance with Seneca Academic Policy. 
+No part of this assignment has been copied manually or electronically from any other source 
+(including 3rd party web sites) or distributed to other students.
+
+Name: Your Name
+Student ID: Aaron Joseph
+Date: 2025-02-06
+Cyclic Web App URL: 
+GitHub Repository URL: 
 *********************************************************************************/
 
 const express = require("express");
