@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/css/main.css" />
+
+        <title>Add Item - Tech Haven</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Tech Haven</a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/shop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/items">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/categories">Categories</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/items/add">Add Item</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cart">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="padding-top: 90px;">
+            <div class="row">
+                <section class="main col-md-9">
+                    <article>
+                        <h2>Add a New Item</h2>
+                        <form method="post" action="/items/add" enctype="multipart/form-data">
+                            <fieldset>
+                                <legend>Feature Image</legend>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input
+                                                class="form-control"
+                                                id="featureImage"
+                                                name="featureImage"
+                                                type="file"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <br />
+                            <fieldset>
+                                <legend>Post Content</legend>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="title">Item Name:</label>
+                                            <input class="form-control" id="title" name="title" type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="price">Price:</label>
+                                            <input class="form-control" id="price" name="price" type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="body">Description:</label>
+                                            <textarea
+                                                class="form-control"
+                                                id="body"
+                                                name="body"
+                                                rows="15"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="category">Category:</label>
+                                            <select class="form-control" name="category" id="category">
+                                                <option value="1">Laptops & Computers</option>
+                                                <option value="2">Smartphones & Tablets</option>
+                                                <option value="3">Gaming Gear & Consoles</option>
+                                                <option value="4">Accessories</option>
+                                                <option value="5">Smart Home Devices</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="published">Visibility:</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="published" id="published" />
+                                                    Published
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <hr />
+                            <input
+                                type="submit"
+                                class="btn btn-primary pull-right"
+                                value="Add Post"
+                            /><br /><br /><br />
+                        </form>
+                    </article>
+                </section>
+
+                <aside class="col-md-3">
+                    <h2>New Arrivals</h2>
+                    <p>Check out the latest tech products just added to our store:</p>
+                    <ul>
+                        <li><strong>ASUS ROG Zephyrus G14</strong> – High-performance gaming laptop.</li>
+                        <li><strong>Apple MacBook Pro M3</strong> – The ultimate productivity powerhouse.</li>
+                        <li><strong>Samsung Galaxy S24 Ultra</strong> – The latest in smartphone innovation.</li>
+                        <li><strong>Logitech G Pro X</strong> – Advanced gaming headset for pros.</li>
+                    </ul>
+                    <p>Visit our <a href="/shop">Shop</a> to explore more!</p>
+                </aside>
+            </div>
+        </div>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>
