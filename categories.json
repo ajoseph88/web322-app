@@ -1,22 +1,22 @@
 [
-    {
-       "id":1,
-       "category":"Home, Garden"
-    },
-    {
-       "id":2,
-       "category":"Electronics, Computers, Video Games"
-    },
-    {
-       "id":3,
-       "category":"Clothing"
-    },
-    {
-       "id":4,
-       "category":"Sports & Outdoors"
-    },
-    {
-       "id":5,
-       "category":"Pets"
-    }
- ]
+   {
+       "id": 1,
+       "category": "Laptops & Computers"
+   },
+   {
+       "id": 2,
+       "category": "Smartphones & Tablets"
+   },
+   {
+       "id": 3,
+       "category": "Gaming Gear & Consoles"
+   },
+   {
+       "id": 4,
+       "category": "Accessories"
+   },
+   {
+       "id": 5,
+       "category": "Smart Home Devices"
+   }
+]
