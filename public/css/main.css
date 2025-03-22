@@ -62,3 +62,39 @@ footer {
     padding: 10px;
     color: #ffffff;
 }
+
+.table-responsive {
+    margin: 20px 0;
+}
+
+.table {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th, .table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #3e2c22;
+    color: #ffffff;
+}
+
+.table tbody tr:hover {
+    background-color: #444;
+}
+
+.table a {
+    color: #d2b48c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.table a:hover {
+    color: #ffffff;
+}
