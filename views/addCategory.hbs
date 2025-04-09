@@ -1,0 +1,43 @@
+<div class="row">
+    <section class="main col-md-9">
+        <article>
+            <h2>Add Category</h2>
+            <form method="post" action="/categories/add">
+                <fieldset>
+                    <legend>New Category Info</legend>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="category">Category Name:</label>
+                                <input
+                                    class="form-control"
+                                    id="category"
+                                    name="category"
+                                    type="text"
+                                    autofocus
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <hr />
+                <input
+                    type="submit"
+                    class="btn btn-primary pull-right"
+                    value="Add Category"
+                /><br /><br /><br />
+            </form>
+        </article>
+    </section>
+
+    <aside class="col-md-3">
+        <h2>Why Add Categories?</h2>
+        <p>Categories help organize your product listings and make browsing easier for customers. Try grouping products into types like:</p>
+        <ul>
+            <li><strong>Smartphones</strong></li>
+            <li><strong>Gaming Gear</strong></li>
+            <li><strong>Smart Home</strong></li>
+        </ul>
+        <p><a href="/items">Back to Items</a></p>
+    </aside>
+</div>

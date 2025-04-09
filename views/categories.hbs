@@ -1,6 +1,9 @@
 <div class="row">
     <div class="col-md-12">
-        <h2>Categories</h2>
+        <h2>
+            Categories
+            <a href="/categories/add" class="btn btn-success pull-right">Add Category</a>
+        </h2>
         <hr />
         {{#unless categories}}
             <div class="col-md-12 text-center">
@@ -13,6 +16,7 @@
                         <tr>
                             <th>Category ID</th>
                             <th>Category Name</th>
+                            <th></th> <!-- For the Remove button -->
                         </tr>
                     </thead>
                     <tbody>
@@ -20,6 +24,9 @@
                             <tr>
                                 <td><a href="/items?category={{this.id}}">{{this.id}}</a></td>
                                 <td><a href="/items?category={{this.id}}">{{this.category}}</a></td>
+                                <td>
+                                    <a href="/categories/delete/{{this.id}}" class="btn btn-danger btn-sm">Remove</a>
+                                </td>
                             </tr>
                         {{/each}}
                     </tbody>
